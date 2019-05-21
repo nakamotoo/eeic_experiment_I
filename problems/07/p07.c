@@ -1,4 +1,4 @@
-/* 
+/*
  * p07.c
  *
  * usage:
@@ -6,7 +6,7 @@
  *   ./a.out filename
  *
  * Intended behavior
- * 
+ *
  * It first reads the contents of the file given
  * in the command line, and print characters in it
  * in the reverse order.
@@ -21,12 +21,12 @@
 
 int main(int argc, char ** argv)
 {
-  /* try to read the whole contents of 
+  /* try to read the whole contents of
      the file into s */
   FILE * fp = fopen(argv[1], "rb");
   /* s is initially small (10 bytes) */
   int begin = 0;
-  int end = 10;
+  int end = 1000;
   char * s = (char *)malloc(end);
   while (1) {
     /* read as many bytes as s can store ((end - begin) bytes) */
