@@ -1,4 +1,4 @@
-/* 
+/*
  * p08.c a simple calculator
  */
 
@@ -35,9 +35,9 @@ Example
     ^
 
 When run, it reads a line from its standard input,
-checks if the line can be read as an arithmetic 
+checks if the line can be read as an arithmetic
 expression consisting of
-+, -, /, *, and parens '(', and ')'. 
++, -, /, *, and parens '(', and ')'.
 
 Spaces are NOT allowed.
 
@@ -54,12 +54,12 @@ Examples:
 
 Formal syntax of an expression is 'E' below.
 
-E ::= F (('+'|'-') F)*  
-F ::= G (('*'|'/') G)*  
-G ::= ('+'|'-') G | H   
+E ::= F (('+'|'-') F)*
+F ::= G (('*'|'/') G)*
+G ::= ('+'|'-') G | H
 H ::= number | '(' E ')'
 
-(...)* expresses an arbitrary number (including zero) 
+(...)* expresses an arbitrary number (including zero)
 of repetition of '...'.
 
 */
@@ -75,7 +75,7 @@ of repetition of '...'.
 char line[MAXLINE];		/* read input here */
 char * p;			/* points to the next character in line array */
 
-/* 
+/*
                  p
                  |
                  |
@@ -101,19 +101,19 @@ void syntax_error()
 double number()
 {
   /* if p points to the beginning of a number,
-     return the number and advance p one char past the 
+     return the number and advance p one char past the
      end of the number. otherwise signal syntax error.
 
 before:
              p
       +-+-+-+-+-+-+-+-+-+-+-+-+
-line: | | | |6|7|.|3|+|(|1|*|3 | 
+line: | | | |6|7|.|3|+|(|1|*|3 |
       +-+-+-+-+-+-+-+-+-+-+-+-+
 
 after:
                      p
       +-+-+-+-+-+-+-+-+-+-+-+-+
-line: | | | |6|7|.|3|+|(|1|*|3| 
+line: | | | |6|7|.|3|+|(|1|*|3|
       +-+-+-+-+-+-+-+-+-+-+-+-+
 
 
@@ -129,12 +129,12 @@ line: | | | |6|7|.|3|+|(|1|*|3|
   return x;
 }
 
-double E_expression(); 
+double E_expression();
 
-double H_expression() 
+double H_expression()
 {
   /* if p points to the beginning of H expression
-     in the definition 
+     in the definition
 
      H ::= number | '(' E ')'
 
@@ -146,8 +146,10 @@ double H_expression()
     return number();
   }
   case '(': {
+    p++;
     double x = E_expression();
     if (*p == ')') {
+      p++;
       return x;
     } else {
       syntax_error();
@@ -161,9 +163,9 @@ double H_expression()
 double G_expression()
 {
   /* if p points to the beginning of G expression
-     in the definition 
+     in the definition
 
-     G ::= ('+'|'-') G | H   
+     G ::= ('+'|'-') G | H
 
      return its value. otherwise signal syntax error
   */
@@ -183,12 +185,12 @@ double G_expression()
   }
 }
 
-double F_expression() 
+double F_expression()
 {
   /* if p points to the beginning of G expression
-     in the definition 
+     in the definition
 
-     F ::= G (('*'|'/') G)*  
+     F ::= G (('*'|'/') G)*
 
      return its value. otherwise signal syntax error
   */
@@ -207,12 +209,12 @@ double F_expression()
   }
 }
 
-double E_expression() 
+double E_expression()
 {
   /* if p points to the beginning of G expression
-     in the definition 
+     in the definition
 
-     E ::= F (('+'|'-') F)*  
+     E ::= F (('+'|'-') F)*
 
      return its value. otherwise signal syntax error
   */
@@ -221,10 +223,10 @@ double E_expression()
   while (1) {
     if (*p == '+') {
       p++;
-      x =+ F_expression();
+      x += F_expression();
     } else if (*p == '-') {
       p++;
-      x =- F_expression();
+      x -= F_expression();
     } else {
       return x;
     }
