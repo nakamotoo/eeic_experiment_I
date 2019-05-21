@@ -1,8 +1,8 @@
-/* 
+/*
  * p04.c
  */
 
-/* 
+/*
  * usage:
  *
  *   ./a.out Ax Ay Az Bx By Bz
@@ -41,7 +41,8 @@ double angle(vect3 * A, vect3 * B)
 
 vect3 * mk_point(double x, double y, double z)
 {
-  vect3 p[1];
+  vect3 * p;
+  p = (vect3*)malloc(sizeof(vect3));
   p->x = x;
   p->y = y;
   p->z = z;
