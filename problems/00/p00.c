@@ -11,6 +11,7 @@
  * It should print the content of this file.
  *
  */
+#include <stdio.h>
 
 int main()
 {

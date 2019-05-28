@@ -1,10 +1,10 @@
-/* 
+/*
  * p01.c
  */
 
-/* 
+/*
  * Usage:
- * 
+ *
  *  ./a.out
  *
  * Intended behavior
@@ -16,6 +16,10 @@
  */
 
 #include <stdio.h>
+#include <math.h> //compiling math.h needs "-lm"
+
+double cos2(double x);
+double sin2(double x);
 
 int main()
 {
@@ -27,13 +31,13 @@ int main()
   return 0;
 }
 
-double cos2(double x) 
+double cos2(double x)
 {
   double c = cos(x);
   return c * c;
 }
 
-double sin2(double x) 
+double sin2(double x)
 {
   double s = sin(x);
   return s * s;
