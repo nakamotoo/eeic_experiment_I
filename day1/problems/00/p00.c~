@@ -12,7 +12,8 @@
  *
  */
 
-int main(){
+int main()
+{
   FILE * fp = fopen("p00.c", "rb");
   while (1) {
     int c = fgetc(fp);
