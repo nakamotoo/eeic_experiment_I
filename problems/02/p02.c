@@ -1,12 +1,12 @@
-/* 
+/*
  * p02.c
  */
 
-/* 
+/*
  * Usage:
- *   
+ *
  *    ./a.out X Y
- * 
+ *
  * Intended behavior
  *  It should print X * Y if both X and Y can be read as
  *  floating point numbers, or print 0 otherwise.
@@ -17,6 +17,8 @@
  *    ./a.out a b
  *    0.000000
  */
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char ** argv)
 {

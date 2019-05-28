@@ -1,11 +1,11 @@
-/* 
+/*
  * p05.c
  */
 
-/* 
+/*
  * usage:
  *   ./a.out
- * 
+ *
  * Intended behavior
  *   It reads the contents of this file and print it.
  */
@@ -14,7 +14,7 @@
 #include <stdio.h>
 int main()
 {
-  FILE * fp = fopen("pO5.c", "rb");
+  FILE * fp = fopen("p05.c", "rb");
   char buf[100];
   while (1) {
     int n = fread(buf, 1, 100, fp);
@@ -23,4 +23,3 @@ int main()
   }
   return 0;
 }
-
