@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="description" content="東京大学工学部　電子情報工学科・電気電子工学科のサイトです。">
+	<meta name="keywords" content="東京大学工学部,電気工学科,電子情報工学科,電子工学科,東京大学,東大,電気電子工学科,ee">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>東京大学工学部　電子情報工学科・電気電子工学科</title>
+	<link rel="stylesheet" href="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/style.css">
+	<link rel="stylesheet" href="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/css/flexslider.css" />
+	<link rel="stylesheet" href="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/css/lightbox.css" />
+	<link rel="stylesheet" href="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/css/font-awesome.min.css" />
+	<script src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/js/jquery-1.12.3.min.js"></script>
+	<script src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/js/jquery.flexslider.js"></script>
+	<script src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/js/lightbox.js"></script>
+	<script src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/js/common.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/js/html5shiv-printshiv.min"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="東京大学工学部　電子情報工学科・電気電子工学科 &raquo; Feed" href="http://www.ee.t.u-tokyo.ac.jp/j/feed" />
+<link rel="alternate" type="application/rss+xml" title="東京大学工学部　電子情報工学科・電気電子工学科 &raquo; Comments Feed" href="http://www.ee.t.u-tokyo.ac.jp/j/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.ee.t.u-tokyo.ac.jp\/j\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.10"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='http://www.ee.t.u-tokyo.ac.jp/j/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.7.10" />
+</head>
+<body>
+
+<div class="box-header">
+<div class="header">
+	<div class="logo">
+		<p class="logo-pc"><a href="http://www.ee.t.u-tokyo.ac.jp/j/"><img src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/images/logo_pc.png" alt="EEIC" /></a><p>
+	</div>
+	<div class="siteid">
+	<a href="http://www.ee.t.u-tokyo.ac.jp/j/">
+	<p>東京大学工学部</p>
+	<h1>電子情報工学科・電気電子工学科</h1>
+	<p>Department of Electrical and Electronic Engineering,<br />Department of Information and Communication Engineering,<br />The University of Tokyo</p>
+	</a>
+	</div>
+</div>
+</div>
+
+<div class="box-wrapper">
+	<div class="box-content">
+
+		<div class="category-title">
+			<h1>ニュース</h1>
+		</div>
+
+		<!-- page-body -->
+		<div class="page-body">
+		<section>
+				<p>指定された記事は存在しません。入力されたURLが間違っている可能性があります。お手数ですがトップページに戻るか、上のナビゲーションから目的のコンテンツをお選びください。</p>
+		</section>
+
+		</div>
+		<!--/ page-body -->
+
+
+	</div>
+	<!--/ box-content -->
+
+	<div class="box-sidebar">
+		<div class="ham-menu">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+			<span class="txtmenu">MENU</span>
+		</div>
+
+		<div class="globalnav">
+		<div id="dummy_area1"></div>
+		<nav class="gnav">
+		<ul>
+			<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/">HOME</a></li>
+			<li><a href="https://sites.google.com/akg.t.u-tokyo.ac.jp/eeic-find/" target="_blank">
+				<img src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/images/banner_eeicfind.png" alt="EEIC FIND">
+				</a></li>
+			<li class="edu"><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/index.html">進学を志す皆さんへ</a>
+				<ul>
+					<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/index.html">進学選択と履修コース</a></li>
+					<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/komaba/index.html">1・2 年生向け駒場での講義</a></li>
+					<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/index.html">学科での生活</a></li>
+					<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/course/index.html">進路・就職</a></li>
+					<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/qa/index.html">Q&amp;A</a></li>
+					<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/contact/index.html">進学に関するコンタクト</a></li>
+				</ul>
+			</li>
+			<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/category/news" class="active">ニュース</a></li>
+			<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/index.html">研究紹介</a></li>
+			<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/staff/index.html">教員一覧</a></li>
+			<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/access/index.html">アクセス、お問い合わせ</a></li>
+			<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/students/index.html">内部生のページ</a></li>
+		</ul>
+		</nav>
+		</div>
+
+		<aside>
+		<div class="subnav">
+			<a href="http://www.ee.t.u-tokyo.ac.jp/j/education/pdf/guidance_book.pdf" target="_blank"><dl class="nav_gbook"><dt>進学ガイ��
+33e
+�ンスブック</dt><dd>2019年度版<br />（PDF：10.3MB）</dd></dl></a>
+			<a href="http://www.ee.t.u-tokyo.ac.jp/j/document/index.html"><dl class="nav_document"><dt>発行物</dt><dd>彙報やニュースレターなど<br />電子・情報系の発行物</dd></dl></a>
+			<a href="http://www.ee.t.u-tokyo.ac.jp/j/life/alumni.html"><dl class="nav_alumni"><dt>同窓会のあるきかた</dt><dd>電子・情報系の教員陣や、社会の第一線で活躍する先輩たちの情報が満載</dd></dl></a>
+			<a href="https://giju.t.u-tokyo.ac.jp/eejim/" target="_blank"><dl class="nav_office"><dt>電気系事務室</dt><dd>学生生活における様々な<br />手続きなど相談窓口はこちら</dd></dl></a>
+		</div>
+		<p class="utlogo"><a href="http://www.u-tokyo.ac.jp/index_j.html" target="_blank"><img src="
+1768
+http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/images/utlogo.png" alt="東京大学" /></a></p>
+		</aside>
+
+	</div>
+	<!--/ box-sidebar -->
+
+</div>
+<!--/ box-wrapper -->
+
+
+<footer>
+<div class="box-footer">
+<div class="box-footnav">
+
+<nav>
+	<div class="footnav course">
+	<p class="footnav-title">進学情報</p>
+	<ul class="footnav-left">
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/index.html">進学選択と履修コース</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/index.html">はじめに</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/curriculum.html">カリキュラム</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/timetable.html">時間割</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/diagram.html">講義系統図</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/experiment.html">学生実験・演習</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/education/guidance.html">進学ガイダンスブック</a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/komaba/index.html">1・2年生向け駒場での講義</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/komaba/komaba_summer.html">2017年夏学期</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/komaba/komaba_winter.html">2017年冬学期</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="footnav-right">
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/index.html">学科での生活</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/schedule.html">年間スケジュール</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/facilities.html">施設・設備</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/voice.html">現役学生の声</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/voice_graduate.html">卒業生の声</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/life/alumni.html">同窓会のあるきかた</a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/course/index.html">進路・就職</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/course/aftergraduation.html">卒業生の進路</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/course/graduateschool.html">大学院の紹介</a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/qa/index.html">Q＆A</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/qa/general.html">全体</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/qa/course.html">コース別</a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/contact/index.html">進学に関するコンタクト</a></li>
+	</ul>
+	</div>
+
+	<div class="footnav department">
+	<p class="footnav-title">学科情報</p>
+	<ul class="footnav-left">
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/category/news">ニュース</a></li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/index.html">研究紹介</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/lab01.html">メディア・コンテンツと知能インタフェース</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/lab02.html">ネットワークとコンピューティング</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/lab03.html">システム・エレクトロニクスとフォトニクス＆ワイヤレス</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/lab04.html">量子フォトニクスとナノ物理・デバイス</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/research/lab05.html">プラズマ・エネルギーフロンティアとエネルギーシステム・制御</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="footnav-right">
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/staff/index.html">教員一覧</a>
+			<ul>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/staff/staff01.html">電子情報工学科</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/staff/staff02.html">電気電子工学科</a></li>
+				<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/staff/staff03.html">五十音順</a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/access/index.html">アクセス・お問い合わせ</a></li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/document/index.html">発行物</a></li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/util/sitemap.html">サイトマップ</a></li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/students/index.html">内部生のページ</a></li>
+		<li><a href="http://www.ee.t.u-tokyo.ac.jp/j/util/about.html">このサイトについて</a></li>
+	</ul>
+	</div>
+
+	<div class="footnav social">
+	<p class="footnav-title">SNS</p>
+	<ul>
+		<li><a href="https://www.facebook.com/EEIC%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6-288681391148337/" target="_blank"><img src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/images/facebook.png" alt="Facebook" /></a></li>
+		<li><a href="https://twitter.com/EEIC_Univ_Tokyo" target="_blank"><img src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/images/twitter.png" alt="Twitter" /></a></li>
+		<li><a href="https://www.youtube.com/user/UTeeic" target="_blank"><img src="http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-content/themes/theme2017/shared/images/youtube.png" alt="Youtube" /></a></li>
+	</ul>
+	</div>
+</nav>
+
+</div>
+</div>
+
+<div class="box-copyright">
+	<p class="copyright">Copyright&nbsp;&copy;&nbsp;<span class="nowyear"></span> Department of Electrical and Electronic Engineering,<br />Department of Information and Communication Engineering,<br />The University of Tokyo</p>
+</div>
+</footer>
+
+
+
+<!-- Wordbooker code revision : 1.9.5 r00 -->
+<script type='text/javascript' src='http://www.ee.t.u-tokyo.ac.jp/j/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.10'></script>
+</body>
+</html>
