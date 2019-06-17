@@ -8,6 +8,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+// .serv_send 50000 < text.txt
+// rec -t raw -b 16 -c 1 -e s -r 44100 - | ./serv_send 50001
+
 void die(char *s){perror(s); exit(1);}
 
 int main(int argc, char **argv){

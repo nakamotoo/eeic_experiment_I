@@ -9,7 +9,7 @@
 #include <unistd.h>
 
 // ./a.out 192.168.100.106 50000
-
+//./client_recv 192.168.100.110 50001 | play -t raw -b 16 -c 1 -e s -r 44100 -
 void die(char *s){perror(s); exit(1);}
 
 int main(int argc, char **argv){
