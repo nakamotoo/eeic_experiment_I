@@ -192,15 +192,16 @@ void exe_send(int s) {
 
   while (1) {
     ssize_t m = read_n(p_num, n * sizeof(sample_t), data);
+    if (m == -1 || m == 0)
+      continue;
     //コマンドから引数を取る
-    // flag_tmp = getch();
-    flag_tmp = getchar();
+    flag_tmp = getch();
     if (flag_tmp ==
         'a') { //その文字が意味を与えたている文字であればグローバル変数を書き換える
       flag = 'a';
     }
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < m; i++) {
       if (data[i] > MAX)
         MAX = data[i];
       else if (data[i] < min)
@@ -209,7 +210,7 @@ void exe_send(int s) {
     if (MAX - min <
         1000) { //振幅が小さい時はsend,fftしない；連続で振幅が小さいときのみ飛ばす
       cnt++;
-      if (cnt > 100) {
+      if (cnt > 10) {
         continue;
       }
     } else
@@ -217,7 +218,7 @@ void exe_send(int s) {
     min = 0;
     MAX = 0;
 
-    int n1 = send(s, data, n * sizeof(sample_t), 0);
+    int n1 = send(s, data, m * sizeof(sample_t), 0);
     if (n1 == -1)
       continue;
   }

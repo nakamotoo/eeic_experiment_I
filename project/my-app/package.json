@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.1.3",
+    "@material-ui/icons": "^4.2.1",
     "@material-ui/lab": "^4.0.0-alpha.18",
     "nw-react-scripts": "2.0.0",
     "react": "^16.8.6",
@@ -37,5 +38,11 @@
     "buildDir": "./build",
     "cacheDir": "./cache",
     "macIcns": "./src/logo.icns"
+  },
+  "window": {
+    "width": 280,
+    "height": 400,
+    "min_width": 250,
+    "min_height": 400
   }
 }
