@@ -34,7 +34,8 @@ class App extends Component {
     port: "50000",
     val1: 1,
     val2: 1,
-    val3: 1
+    val3: 1,
+    val4: 1
   };
 
   ps;
@@ -121,6 +122,21 @@ class App extends Component {
     }
   };
 
+  onChangeVal4 = (e, v) => {
+    this.setState({ val4: v });
+    switch (v) {
+      case 0:
+        this.ps.stdin.write("k");
+        break;
+      case 1:
+        this.ps.stdin.write("l");
+        break;
+      case 2:
+        this.ps.stdin.write("m");
+        break;
+    }
+  };
+
   renderButton = () => {
     if (this.state.isConnecting) {
       return (
@@ -177,6 +193,17 @@ class App extends Component {
           orientation="vertical"
           defaultValue={1}
           onChange={(e, v) => this.onChangeVal3(e, v)}
+          aria-labelledby="vertical-slider"
+          getAriaValueText={valuetext}
+          min={0}
+          max={2}
+          step={1}
+        />
+        <Slider
+          className={"slider"}
+          orientation="vertical"
+          defaultValue={1}
+          onChange={(e, v) => this.onChangeVal4(e, v)}
           aria-labelledby="vertical-slider"
           getAriaValueText={valuetext}
           marks={marks}
