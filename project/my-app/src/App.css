@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #ffffff;
+  background-color: rgba(248, 248, 248, 0.82);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,11 +13,16 @@
 }
 
 .slider-wrapper {
-  margin: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 100px;
 }
 
 .slider {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.title-text {
+  font-weight: bold;
 }

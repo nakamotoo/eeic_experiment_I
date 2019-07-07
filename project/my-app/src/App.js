@@ -3,7 +3,9 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import Slider from "@material-ui/lab/Slider";
 import Fab from "@material-ui/core/Fab";
-import AddIcon from "@material-ui/icons/Call";
+import CallIcon from "@material-ui/icons/Call";
+import CallEndIcon from "@material-ui/icons/CallEnd";
+import TextField from "@material-ui/core/TextField";
 import "./App.css";
 
 function valuetext(value) {
@@ -13,21 +15,23 @@ function valuetext(value) {
 const marks = [
   {
     value: 0,
-    label: "0dB"
+    label: "-20dB"
   },
   {
     value: 1,
-    label: "10dB"
+    label: "0dB"
   },
   {
     value: 2,
-    label: "20dB"
+    label: "6dB"
   }
 ];
 
 class App extends Component {
   state = {
     isConnecting: false,
+    ip: "157.82.202.5",
+    port: "50000",
     val1: 1,
     val2: 1,
     val3: 1
@@ -36,9 +40,11 @@ class App extends Component {
   ps;
 
   call = () => {
+    const { ip, port } = this.state;
     this.setState({ isConnecting: true });
     const { spawn } = require("child_process");
-    this.ps = spawn("./../client_n", ["10.213.8.197", "50000"]);
+    // this.ps = spawn("./../client_n", ["10.213.8.197", "50000"]);
+    this.ps = spawn("./../client", [ip, port]);
     const play = spawn("play", [
       "-t",
       "raw",
@@ -62,17 +68,25 @@ class App extends Component {
     this.ps.stdin.write("a");
   };
 
+  onChangeIP = (e, v) => {
+    this.setState({ ip: v });
+  };
+
+  onChangePort = (e, v) => {
+    this.setState({ port: v });
+  };
+
   onChangeVal1 = (e, v) => {
     this.setState({ val1: v });
     switch (v) {
       case 0:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("b");
         break;
       case 1:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("c");
         break;
       case 2:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("d");
         break;
     }
   };
@@ -81,13 +95,13 @@ class App extends Component {
     this.setState({ val2: v });
     switch (v) {
       case 0:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("e");
         break;
       case 1:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("f");
         break;
       case 2:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("g");
         break;
     }
   };
@@ -96,13 +110,13 @@ class App extends Component {
     this.setState({ val3: v });
     switch (v) {
       case 0:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("h");
         break;
       case 1:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("i");
         break;
       case 2:
-        // this.ps.stdin.write("a");
+        this.ps.stdin.write("j");
         break;
     }
   };
@@ -110,19 +124,25 @@ class App extends Component {
   renderButton = () => {
     if (this.state.isConnecting) {
       return (
-        <Button
-          variant="contained"
-          color="secondary"
-          onClick={() => this.drop()}
-        >
-          切断
-        </Button>
+        // <Button
+        //   variant="contained"
+        //   color="secondary"
+        //   onClick={() => this.drop()}
+        // >
+        //   切断
+        // </Button>
+        <Fab color="secondary" aria-label="call" onClick={() => this.drop()}>
+          <CallEndIcon />
+        </Fab>
       );
     } else {
       return (
-        <Button variant="contained" color="primary" onClick={() => this.call()}>
-          call
-        </Button>
+        // <Button variant="contained" color="primary" onClick={() => this.call()}>
+        //   call
+        // </Button>
+        <Fab color="primary" aria-label="call" onClick={() => this.call()}>
+          <CallIcon />
+        </Fab>
       );
     }
   };
@@ -130,10 +150,6 @@ class App extends Component {
   renderSlider = () => {
     return (
       <div className={"slider-wrapper"}>
-        <p>
-          {this.state.val1} : {this.state.val2} : {this.state.val3}
-        </p>
-
         <Slider
           className={"slider"}
           orientation="vertical"
@@ -178,18 +194,21 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {this.renderSlider()}
-          <p> {isConnecting.toString()}</p>
+          <TextField
+            id="standard-name"
+            label="IP Adderess"
+            value={this.state.ip}
+            onChange={(e, v) => this.onChangeIP(v)}
+            margin="normal"
+          />
+          <TextField
+            id="standard-name"
+            label="Port Number"
+            value={this.state.port}
+            onChange={(e, v) => this.onChangePort(v)}
+            margin="normal"
+          />
           {this.renderButton()}
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={() => this.drop()}
-          >
-            切断
-          </Button>
-          <Fab size="small" color="secondary" aria-label="Add">
-            <AddIcon />
-          </Fab>
         </header>
       </div>
     );
