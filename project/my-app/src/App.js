@@ -30,7 +30,7 @@ const marks = [
 class App extends Component {
   state = {
     isConnecting: false,
-    ip: "157.82.202.5",
+    ip: "157.82.205.63",
     port: "50000",
     val1: 1,
     val2: 1,
@@ -45,7 +45,11 @@ class App extends Component {
     this.setState({ isConnecting: true });
     const { spawn } = require("child_process");
     // this.ps = spawn("./../client_n", ["10.213.8.197", "50000"]);
-    this.ps = spawn("./../client", [ip, port]);
+    this.ps = spawn("./../client_final", [ip, port]);
+    this.ps.on('error', (err) => {
+      this.setState({ isConnecting: err });
+    });
+
     const play = spawn("play", [
       "-t",
       "raw",
@@ -69,12 +73,12 @@ class App extends Component {
     this.ps.stdin.write("a");
   };
 
-  onChangeIP = (e, v) => {
-    this.setState({ ip: v });
+  onChangeIP = (e) => {
+    this.setState({ ip: e.target.value });
   };
 
-  onChangePort = (e, v) => {
-    this.setState({ port: v });
+  onChangePort = (e) => {
+    this.setState({ port: e.target.value });
   };
 
   onChangeVal1 = (e, v) => {
@@ -221,18 +225,19 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {this.renderSlider()}
+          
           <TextField
             id="standard-name"
             label="IP Adderess"
             value={this.state.ip}
-            onChange={(e, v) => this.onChangeIP(v)}
+            onChange={(e) => this.onChangeIP(e)}
             margin="normal"
           />
           <TextField
             id="standard-name"
             label="Port Number"
             value={this.state.port}
-            onChange={(e, v) => this.onChangePort(v)}
+            onChange={(e) => this.onChangePort(e)}
             margin="normal"
           />
           {this.renderButton()}
